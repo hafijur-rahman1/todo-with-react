@@ -32,7 +32,7 @@ const NewTodo = ({ handleAddTodo }) => {
       </div>
       <div className={style["form-field"]}>
         <label htmlFor="description">Description: </label>
-        <input
+        <textarea
           type="text"
           id="description"
           name="description"
@@ -40,7 +40,7 @@ const NewTodo = ({ handleAddTodo }) => {
           onChange={handleChange}
         />
       </div>
-      <button type="submit">Add todo</button>
+      <button type="submit">Add Todo</button>
     </form>
   );
 };

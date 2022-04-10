@@ -20,13 +20,19 @@ const Home = () => {
     });
     // console.log(todos);
   };
-
+  //
+  const handleRemoveTodos = (id) => {
+    setTodos((prevTodos) => {
+      const filteredTodos = prevTodos.filter((todo) => todo.id !== id);
+      return filteredTodos;
+    });
+    // alert(id);
+  };
   return (
     <div className={style.container}>
-      <p>this is the Home page</p>
+      <h4 style={{ color: "red" }}>Todo App</h4>
       <NewTodo handleAddTodo={handleAddTodo} />
-
-      <Todos todos={todos} />
+      {todos && <Todos todos={todos} handleRemoveTodos={handleRemoveTodos} />}
     </div>
   );
 };

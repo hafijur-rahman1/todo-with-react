@@ -1,11 +1,11 @@
 import React from "react";
 import style from "./todo.module.css";
-const Todo = ({ todo, id }) => {
+const Todo = ({ todo, id, handleRemoveTodos }) => {
   const { title, description } = todo;
 
   // const
   const handleClick = (id) => {
-    console.log(id);
+    handleRemoveTodos(id);
   };
   return (
     <article className={style.todo}>
