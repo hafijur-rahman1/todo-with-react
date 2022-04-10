@@ -1,11 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Condensed:ital,wght@0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap");
 body {
   margin: 0;
-  font-family: "Pacifico", cursive;
-  font-family: "Roboto Condensed", sans-serif;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: "Cormorant Garamond", serif;
 }
