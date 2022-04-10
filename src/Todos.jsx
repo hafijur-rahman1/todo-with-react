@@ -7,7 +7,7 @@ const Todos = ({ todos }) => {
   return (
     <section className={style.todos}>
       {todos.map((todo) => (
-        <Todo todo={todo} key={todo.id} />
+        <Todo todo={todo.todo} key={todo.id} id={todo.id} />
       ))}
     </section>
   );

@@ -1,7 +1,12 @@
 import React from "react";
 import style from "./todo.module.css";
-const Todo = ({ todo }) => {
-  const { title, id, description } = todo;
+const Todo = ({ todo, id }) => {
+  const { title, description } = todo;
+
+  // const
+  const handleClick = (id) => {
+    console.log(id);
+  };
   return (
     <article className={style.todo}>
       <div>
@@ -9,7 +14,12 @@ const Todo = ({ todo }) => {
         <p>{description}</p>
       </div>
       <div>
-        <button className={style.btn}>
+        <button
+          className={style.btn}
+          onClick={() => {
+            handleClick(id);
+          }}
+        >
           <i className="fa fa-trash"></i>
         </button>
       </div>
